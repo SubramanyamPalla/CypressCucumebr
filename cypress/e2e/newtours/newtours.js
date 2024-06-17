@@ -13,6 +13,7 @@ Given("open newtour application", () => {
 //   //Enter password
 //   cy.get("[name='password']").clear().type(password);
 // });
+//test
 
 When("user login by using following", (datatable) => {
   datatable.hashes().forEach((element) => {
