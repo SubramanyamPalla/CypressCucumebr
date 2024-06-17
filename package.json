@@ -1,0 +1,19 @@
+{
+  "name": "cypresscucumber",
+  "version": "2.0.0",
+  "description": "Cucumber Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Subbu",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.10.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e/newtours"
+  }
+}
