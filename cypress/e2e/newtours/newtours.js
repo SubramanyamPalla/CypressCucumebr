@@ -7,15 +7,6 @@ Given("open newtour application", () => {
   cy.visit("https://demo.guru99.com/test/newtours/login.php");
 });
 
-// When("Enter the valid {string} and {string}", (username, password) => {
-//   //Enter user name
-//   cy.get("[name='userName']").clear().type(username);
-//   //Enter password
-//   cy.get("[name='password']").clear().type(password);
-// });
-//test
-//test
-
 When("user login by using following", (datatable) => {
   datatable.hashes().forEach((element) => {
     cy.get("[name='userName']").clear().type(element.userName);
